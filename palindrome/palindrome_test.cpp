@@ -3,7 +3,10 @@
 #include "palindrome.h"
 
 void is_palindrome(char const *str) {
-  ASSERT_STREQ(palindrome(str), "Yes");
+  char a[];
+  a = palindrome(str)
+  ASSERT_STREQ(a, "Yes");
+  free(a);
 }
 
 void not_palindrome(char const *str) {
