@@ -49,5 +49,4 @@ char *palindrome(char const *str) {
   }
 
   return answer;
-  free(answer);
 }
