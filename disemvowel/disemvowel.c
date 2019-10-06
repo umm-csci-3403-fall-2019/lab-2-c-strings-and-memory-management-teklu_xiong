@@ -34,7 +34,7 @@ char *disemvowel(char *str) {
 
  newString = (char*) calloc(len-isval(result)+1, sizeof(char)); 
 
-
+ j = 0;
  for (int i = 0; i < len; i++){
       if (result[i] == 'a' || result[i] == 'e' || result[i] == 'i' || result[i] == 'o' || result[i] == 'u' || result[i] == 'A' || result[i] == 'E' || result[i] == 'I' || result[i] == 'O' || result[i] == 'U') {
 //	     result[i] = "";
@@ -43,6 +43,6 @@ char *disemvowel(char *str) {
 	     j++;
      }
  }
-  newString[len-isval(result)+1] = '\0';
+  newString[len-isval(result)] = '\0';
   return newString;
 }
